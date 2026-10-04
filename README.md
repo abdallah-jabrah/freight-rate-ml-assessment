@@ -47,3 +47,40 @@ Install the required dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
+
+```
+
+## Running the Solution
+
+Place the following provided assessment files in the repository root:
+
+- `train-test.csv`
+- `validation.csv`
+- `validation-predictions-template.csv`
+- `december-chart-inputs.csv`
+
+Then open:
+
+`spotter_solution.ipynb`
+
+and run all cells from top to bottom.
+
+The notebook generates:
+
+- `validation_predictions.csv`
+- `december_chart_inputs_completed.csv`
+
+## Validation
+
+The provided scoring script can be run with:
+
+```bash
+python score.py --predictions validation_predictions.csv --december-predictions december_chart_inputs_completed.csv
+```
+
+The final submission was successfully validated by the provided scorer for:
+
+- 12,000 final predictions
+- 31 fixed December predictions
+
+Final hidden validation metrics are calculated by Spotter after submission.
