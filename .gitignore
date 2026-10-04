@@ -1,0 +1,23 @@
+# Spotter-provided assessment data
+train-test.csv
+validation.csv
+validation-predictions-template.csv
+december-chart-inputs.csv
+
+# Spotter-provided scorer
+score.py
+
+# CatBoost generated files
+catboost_info/
+
+# VS Code local settings
+.vscode/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+# Scorer generated directory
+scorer_results/
